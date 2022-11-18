@@ -1,7 +1,9 @@
 from script import convert_dna_to_rna, convert_rna_to_protein
+from data.db_operations import create_db_and_tables
 
 
 def test():
+    create_db_and_tables()
     rna_tests = {
         'ATTTGGCTACTAACAATCTA': 'AUUUGGCUACUAACAAUCUA',
         'GTTGTAATGGCCTACATTA': 'GUUGUAAUGGCCUACAUUA',
