@@ -1,5 +1,5 @@
 from script import convert_dna_to_rna, convert_rna_to_protein
-from data.db_operations import create_db_and_tables
+from data.create_tables import create_db_and_tables
 
 
 def test():

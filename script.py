@@ -1,4 +1,4 @@
-from data.db_operations import get_rna_base, get_protein
+from data.get_data import get_rna_base, get_protein
 
 
 CODON_LENGTH = 3
