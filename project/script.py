@@ -53,9 +53,7 @@ def run_on_input_files() -> None:
 
 if __name__ == '__main__':
     create_db_and_tables()
-    if len(sys.argv) < 2:
-        run_on_input_files()
-    elif len(sys.argv) == 3:
+    if len(sys.argv) == 3:
         mode = sys.argv[1].strip()
         sequence = sys.argv[2].strip()
         if mode == 'dna_to_rna':
@@ -66,4 +64,6 @@ if __name__ == '__main__':
             plot_gc_content(sequence, image_file_name='gc_content_of_sequence_as_argument')
             print('GC content plot saved in images/')
         else:
-            print('Wrong mode! Allowed modes: dna_to_rna, rna_to_protein', 'gc_content')
+            print('Wrong mode! Allowed modes: dna_to_rna, rna_to_protein, gc_content')
+    else:
+        run_on_input_files()
