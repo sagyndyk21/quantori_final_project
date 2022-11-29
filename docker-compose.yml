@@ -16,7 +16,6 @@ services:
     depends_on:
       - db
     command: /bin/sh -c "python script.py ${mode} ${sequence} ; tail -f /dev/null"
-#      python script.py ${mode} ${sequence}
-#      tail -f /dev/null
+
 volumes:
   db_volume:
