@@ -1,10 +1,17 @@
+import os
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 
 from data.models import Dna, Rna, Codon, AminoAcid
 
 
-engine = create_engine('sqlite:///./data/database.db')
+user = os.environ['POSTGRES_USER']
+password = os.environ['POSTGRES_PASSWORD']
+hostname = os.environ['POSTGRES_HOST']
+database_name = os.environ['POSTGRES_DB']
+
+engine = create_engine(f'postgresql+psycopg2://{user}:{password}@{hostname}/{database_name}')
 
 
 def get_rna_base(dna_base: str) -> str:

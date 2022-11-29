@@ -7,7 +7,7 @@ def get_gc_ratio(genomic_data: str) -> int:
     return int(100 * ratio)
 
 
-def plot_gc_content(genomic_data, step=100, image_file_name='gc_content'):
+def plot_gc_content(genomic_data: str, step: int = 100, image_file_name: str = 'gc_content'):
     windows = [genomic_data[i:i+step] for i in range(0, len(genomic_data), step)]
     genome_positions = []
     gc_ratios = []
