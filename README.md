@@ -1,7 +1,7 @@
 # Quantori Python Academy final project
 This project implements processes as Transcription (DNA -> RNA) and Translation (RNA -> Protein). Corresponding
-functions `convert_dna_to_rna` and `convert_dna_to_rna` are defined in [project/script.py](blob/main/project/script.py)
-Also there is the function in ([project/gc_ratio_plot.py](blob/main/project/gc_ratio_plot.py)) plotting the
+functions `convert_dna_to_rna` and `convert_dna_to_rna` are defined in [project/script.py](project/script.py)
+Also there is the function in ([project/gc_ratio_plot.py](project/gc_ratio_plot.py)) plotting the
 [GC-content](https://en.wikipedia.org/wiki/GC-content) of the DNA molecule.
 
 ## Run project
