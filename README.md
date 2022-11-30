@@ -22,6 +22,7 @@ There are files in `project/data/inputs/` and you can add your inputs to corresp
 some input examples exist already) <br />
 Then to start project run command in the root of the cloned project:
 ```commandline
+cd quantori_final_project
 docker-compose up
 ```
 As a result docker containers will be created and run. There will be run script.py on input sequences defined in
